@@ -14,6 +14,10 @@ Project toolset:
 - json-server
 - TailwindCSS
 
+## Starting from Command Line
+
+## Starting from Docker
+
 ## History
 
 I started the project on May 31st, 2024.
