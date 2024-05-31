@@ -1,0 +1,76 @@
+{
+  "user": [
+    { "id": 1, "name": "johndoe", "depersonalized": false },
+    { "id": 2, "name": "marymerkov", "depersonalized": false }
+  ],
+  "base-info": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "John Doe",
+      "birthPlace": "Budapest",
+      "birthDate": "1980-12-31",
+      "motherName": "Jane Edler",
+      "socialSecNumber": "055 788 199",
+      "taxId": "8012344555",
+      "email": "johndoe@hotmail.com"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "name": "Mary Merkov",
+      "birthPlace": "Debrecen",
+      "birthDate": "1976-01-01",
+      "motherName": "Marissa Johnson",
+      "socialSecNumber": "122 553 211",
+      "taxId": "6712343551",
+      "email": "marymerkov@hotmail.com"
+    }
+  ],
+  "address": [
+    {
+      "id": 1,
+      "userId": 1,
+      "postalCode": "1111",
+      "city": "Budapest",
+      "street": "Avar utca",
+      "houseNumber": "32",
+      "floor": "1. em. 6."
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "postalCode": "1112",
+      "city": "Budapest",
+      "street": "Jánosi utca",
+      "houseNumber": "11",
+      "floor": "fsz. 3."
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "postalCode": "6777",
+      "city": "Debrecen",
+      "street": "Békés utca",
+      "houseNumber": "77",
+      "floor": "3. em 4."
+    }
+  ],
+  "phone": [
+    {
+      "id": 1,
+      "userId": 1,
+      "phoneNumber": "+36-20-555-4444"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "phoneNumber": "+36-20-555-6868"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "phoneNumber": "+36-20-928-7182"
+    }
+  ]
+}
