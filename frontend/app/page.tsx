@@ -5,15 +5,21 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center p-24">
       <h1 className="font-bold text-4xl">Welcome to Persons DB!</h1>
       <p>Please choose from these options:</p>
-      <ul>
+      <ul className="list-disc">
         <li>
-          <Link href="/list">List persons</Link>
+          <Link href="/list" className="underline">
+            List persons
+          </Link>
         </li>
         <li>
-          <Link href="/new">New person</Link>
+          <Link href="/new" className="underline">
+            New person
+          </Link>
         </li>
         <li>
-          <Link href="/depersonalize">Depersonalize</Link>
+          <Link href="/depersonalize" className="underline">
+            Depersonalize
+          </Link>
         </li>
       </ul>
     </main>
