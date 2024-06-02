@@ -14,7 +14,7 @@ const notEmpty = (value: number | string | boolean, defaultValue = "") => {
 
 const PersonTable = ({ base, address, phone }: PersonTableProps) => {
   return (
-    <div>
+    <div className="mb-8">
       <table>
         <tbody>
           <tr>
