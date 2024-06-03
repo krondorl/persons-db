@@ -22,6 +22,16 @@ Frontend:
 - TailwindCSS
 - vitest
 
+## Screenshots
+
+![Welcome](docs/01-welcome.png)
+
+![List](docs/02-list.png)
+
+![New](docs/03-new.png)
+
+![Depersonalize](docs/04-depersonalize.png)
+
 ## Starting from Docker
 
 You need [Docker Desktop](https://www.docker.com/products/docker-desktop/) to run it from Docker.
