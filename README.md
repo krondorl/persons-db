@@ -6,6 +6,22 @@ This application can store and edit citizens' data.
 
 You can read the detailed description [in the task file](task.md).
 
+## Implemented Features
+
+I implemented only part of the feature list to find a balance spent on time vs. features.
+
+- Backend: example GET endpoint
+- Frontend:
+  - SPA with 3 pages
+  - List page using API endpoints getting JSON data via json-server
+  - Data processing
+  - Data rendering
+  - Types
+  - Components
+  - Utilities
+  - Simple styling with emoji icons
+- Data coming from JSON server
+
 ## Stack
 
 Project toolset:
