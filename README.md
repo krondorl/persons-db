@@ -59,6 +59,18 @@ Then execute in `backend` folder:
 mvn spring-boot:run
 ```
 
+## Available Services
+
+When you run the app in Docker the following services are available:
+
+- frontend `http://localhost:3000/`
+- json server
+  - `http://localhost:3080/user`
+  - `http://localhost:3080/base-info`
+  - `http://localhost:3080/address`
+  - `http://localhost:3080/phone`
+- backend `http://localhost:8080/api/user`
+
 ## History
 
 I started the project on May 31st, 2024.
