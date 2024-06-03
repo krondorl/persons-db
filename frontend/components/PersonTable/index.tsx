@@ -1,16 +1,15 @@
 import { Address } from "@/types/address";
 import { Base } from "@/types/base";
 import { Phone } from "@/types/phone";
+import { notEmpty } from "@/utils/not-empty";
+import AddressTable from "../AddressTable";
+import PhoneDisplay from "../PhoneDisplay";
 
 interface PersonTableProps {
   base: Base;
   address: Address[];
   phone: Phone[];
 }
-
-const notEmpty = (value: number | string | boolean, defaultValue = "") => {
-  return value !== null && value !== undefined ? value : defaultValue;
-};
 
 const PersonTable = ({ base, address, phone }: PersonTableProps) => {
   return (
@@ -61,6 +60,12 @@ const PersonTable = ({ base, address, phone }: PersonTableProps) => {
           </tr>
         </tbody>
       </table>
+      {address &&
+        address.map((address) => (
+          <AddressTable address={address}></AddressTable>
+        ))}
+      {phone &&
+        phone.map((phone) => <PhoneDisplay phone={phone}></PhoneDisplay>)}
     </div>
   );
 };
