@@ -15,9 +15,34 @@ Project toolset:
 - TailwindCSS
 - vitest
 
+## Starting from Docker
+
+You need [Docker Desktop](https://www.docker.com/products/docker-desktop/) to run it from Docker.
+
+Inside the project repo run the command:
+`docker compose up`
+
 ## Starting from Command Line
 
-## Starting from Docker
+You need [Node.js](https://nodejs.org/en) to run it from command line.
+
+Go to project folder, then run these commands:
+
+Inside `frontend` folder:
+
+```
+npm install
+npm run dev
+```
+
+Inside `data` folder:
+
+```
+npm install -g json-server
+json-server --port 3080 .\db.json
+```
+
+You might need to use `/` instead of `\`, if you use Mac or Linux.
 
 ## History
 
