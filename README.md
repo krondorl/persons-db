@@ -13,6 +13,7 @@ Project toolset:
 - Next.js
 - json-server
 - TailwindCSS
+- vitest
 
 ## Starting from Command Line
 
