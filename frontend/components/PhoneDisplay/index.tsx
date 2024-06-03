@@ -7,9 +7,17 @@ interface PhoneDisplayProps {
 
 const PhoneDisplay = ({ phone }: PhoneDisplayProps) => {
   return (
-    <div className="mb-8">
+    <div className="mb-2">
       <table>
         <tbody>
+          <thead>
+            <tr>
+              <th className="text-left">
+                <span className="text-4xl">📱</span>
+              </th>
+              <th></th>
+            </tr>
+          </thead>
           <tr>
             <td>Phone Number</td>
             <td>{notEmpty(phone.phoneNumber)}</td>

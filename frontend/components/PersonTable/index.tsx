@@ -13,8 +13,18 @@ interface PersonTableProps {
 
 const PersonTable = ({ base, address, phone }: PersonTableProps) => {
   return (
-    <div className="mb-8">
+    <div className="mb-16">
       <table>
+        <thead>
+          <tr>
+            <th className="text-left">
+              <span className="text-4xl">🪪</span>
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Name</td>

@@ -7,8 +7,16 @@ interface AddressProps {
 
 const AddressTable = ({ address }: AddressProps) => {
   return (
-    <div className="mb-8">
+    <div className="mb-2">
       <table>
+        <thead>
+          <tr>
+            <th className="text-left">
+              <span className="text-4xl">🏡</span>
+            </th>
+            <th></th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
             <td>Postal Code</td>
