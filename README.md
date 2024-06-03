@@ -14,6 +14,7 @@ I implemented only part of the feature list to find a balance spent on time vs. 
 - Frontend:
   - SPA with 3 pages
   - List page using API endpoints getting JSON data via json-server
+  - Unit test
   - Data processing
   - Data rendering
   - Types
