@@ -10,6 +10,13 @@ You can read the detailed description [in the task file](task.md).
 
 Project toolset:
 
+Backend:
+
+- Spring Boot
+- Apache Maven
+
+Frontend:
+
 - Next.js
 - json-server
 - TailwindCSS
@@ -43,6 +50,14 @@ json-server --port 3080 .\db.json
 ```
 
 You might need to use `/` instead of `\`, if you use Mac or Linux.
+
+You need also [Amazon Corretto 17 Java](https://docs.aws.amazon.com/corretto/latest/corretto-17-ug/downloads-list.html), [Apache Maven](https://maven.apache.org/) for the backend.
+
+Then execute in `backend` folder:
+
+```
+mvn spring-boot:run
+```
 
 ## History
 
