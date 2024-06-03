@@ -18,3 +18,9 @@ services:
       - ./frontend:/app
     ports:
       - 3000:3000
+  server:
+    build:
+      dockerfile: Dockerfile
+      context: ./backend
+    ports:
+      - 8080:8080
