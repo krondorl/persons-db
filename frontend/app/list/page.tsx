@@ -1,39 +1,9 @@
 "use client";
 import PersonTableList from "@/components/PersonTableList";
-import { Address } from "@/types/address";
-import { Base } from "@/types/base";
+import { ListData } from "@/types/list-data";
 import { Person } from "@/types/person";
-import { Phone } from "@/types/phone";
 import { useCallback, useEffect, useState } from "react";
-
-interface ListData {
-  address: Address[];
-  baseinfo: Base[];
-  phone: Phone[];
-}
-
-function processData(listData: ListData): Person[] {
-  if (listData && listData?.address && listData?.baseinfo && listData?.phone) {
-    let persons: Person[] = [];
-    for (const baseInfoItem of listData.baseinfo) {
-      const foundAddresses = listData.address.filter(
-        (address: Address) => address.userId === baseInfoItem.userId
-      );
-      const foundPhones = listData.phone.filter(
-        (phone: Phone) => phone.userId === baseInfoItem.userId
-      );
-
-      persons.push({
-        baseinfo: baseInfoItem,
-        addresses: foundAddresses,
-        phones: foundPhones,
-      });
-    }
-    return persons;
-  } else {
-    return [];
-  }
-}
+import { processData } from "./process-data";
 
 export default function List() {
   const [listData, setListData] = useState<ListData | null>(null);
